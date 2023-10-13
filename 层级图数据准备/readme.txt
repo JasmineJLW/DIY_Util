@@ -1,0 +1,9 @@
+用户使用G6VP工具分析数据时，当节点数量较少，不需要配合图数据库使用时，直接导入节点与边的关系更方便使用。
+G6VP支持导入excel与json两种形式。
+本工具可帮助用户便捷地将excel文件中的数据输出成G6VP可识别的json串。
+
+使用时需注意：
+1、需要将nodes数据粘贴到excel中的第一个sheet中，并对node的唯一标识列命名为id
+2、需要将edges数据粘贴到excel中的第二个sheet中，对id命名为source，对上级id命名为target
+
+完成以上两步后，执行handle.py即可，结果输出在 data.json 文件中。
